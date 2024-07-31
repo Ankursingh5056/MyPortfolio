@@ -25,7 +25,7 @@
               <li><a href="#about">ABOUT</a></li>  
               <li><a href="#projects">PROJECTS</a></li>  
               <li><a href="#skills">SKILLS</a></li>  
-              <li><a href="#resume">RESUME</a></li>
+              <li><a href="#" onclick="resume()">RESUME</a></li>
               <li><a href="#contact">CONTACT</a></li>
               
               
@@ -116,7 +116,12 @@
       <img src="./images/product1.png" alt="Project 1">
       <div class="project-content">
         <p style="color: white;">E-commerce website</p>
-        <p style="color: white; ">Developed a responsive e-commerce app with React and Chakra UI, featuring secure authentication, seamless shopping, and performance optimization.</p>
+        <p style="color: white; ">Developed a responsive e-commerce app with React.</p>
+        <li>ReactJS</li>
+        <li>Chakra Ui</li>
+        <li>Html</li>
+        <li>Css</li>
+        
         <button onclick="ecoLive()">Go Live 🚀</button>
         <button onclick="ecoGit()">Github</button>
       </div>
@@ -129,7 +134,11 @@
       <img src="./images/project2.png" alt="Project 2">
       <div class="project-content">
         <p style="color: white;">E-Commerce Application</p>
-        <p style="color: white;">Bewakoof.com with responsive design using Bootstrap, HTML5, CSS3, and JavaScript. Optimized performance and maintained brand consistency.</p>
+        <p style="color: white;">Bewakoof.com with responsive design
+            <li>Bootstrap</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
         <button onclick="bewLive()">Go Live 🚀</button>
         <button onclick="bewGit()">Github</button>
       </div>
@@ -142,7 +151,10 @@
       <img src="./images/product3.png" alt="Project 3">
       <div class="project-content">
         <p style="color: white;">Skin Store</p>
-        <p style="color: white;">Cloned Skin Store with responsive design using HTML5, CSS3, and JavaScript, ensuring brand consistency, performance optimization, and multi-device compatibility.</p>
+        <p style="color: white;">Cloned Skin Store with responsive design , performance optimization, and multi-device compatibility.</p>
+        <li> HTML5</li>
+        <li> CSS3</li>
+        <li> JavaScript</li>
         <button onclick="skinLive()">Go Live 🚀</button>
         <button onclick="skinGit()">Github</button>
       </div>
@@ -203,7 +215,6 @@
 <br>
 <br>
 <br>
-<h3 style="margin-left:30px" >Download Resume: <span id="resume"> Click here</span> </h2>
 </h1>
   <br>
 <br>
@@ -250,12 +261,12 @@ document.querySelectorAll('header a[href^="#"]').forEach(anchor => {
     });
 });
 
-let resume = document.querySelector("#resume")
 
-resume.addEventListener("click",()=>{
+
+ function resume(){
     window.open('./images/ankursingh.pdf',"_blank")
    
-})
+}
 
 
 function skinGit(){
